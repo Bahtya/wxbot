@@ -75,10 +75,11 @@ def sendtogroup():
     #print({}name{}msg.format('@',':'))
 
 def time_task():
+    print('定时任务：running...')
     scheduler=BlockingScheduler()
     scheduler.add_job(sendtogroup,'cron',day_of_week='1-5',hour=8,minute=50)
     scheduler.start()
-    print('running...')
+    
 
 
 
