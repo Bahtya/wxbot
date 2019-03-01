@@ -22,7 +22,7 @@ def sendtofriend():
     UserName=itchat.search_friends(name=Name)[0]['UserName']
     #print(UserName)
     itchat.send_msg(msgs,toUserName=UserName)
-    #print({}Name{}msg.format('@',':'))
+    print('@'+Name+':'+msgs)
 
 #给群发消息
 def sendtogroup():
@@ -30,11 +30,11 @@ def sendtogroup():
     msg=schedule()    
     groups=itchat.search_chatrooms(name=name)[0]['UserName']
     itchat.send_msg(msg,toUserName=groups)
-    #print({}name{}msg.format('@',':'))
+    print('@'+name+':'+msg)
 
 def send_greetins():
     name = '电信3'
-    
+
 
 #定时任务
 def time_task():
