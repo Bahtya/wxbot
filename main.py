@@ -43,7 +43,8 @@ def time_task():
     scheduler.add_job(sendtogroup,'cron',day_of_week='0-6',hour=8,minute=50)
     scheduler.start()
     
-
+def init():
+    itchat.send_msg("task running...",toUserName='filehelper')
 
 if __name__ == "__main__":
     time_task()
