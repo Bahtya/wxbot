@@ -40,7 +40,7 @@ def send_greetins():
 def time_task():
     print('定时任务：running...')
     scheduler=BlockingScheduler()
-    scheduler.add_job(sendtogroup,'cron',day_of_week='1-5',hour=8,minute=50)
+    scheduler.add_job(sendtogroup,'cron',day_of_week='0-6',hour=8,minute=50)
     scheduler.start()
     
 
