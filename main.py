@@ -47,6 +47,7 @@ def init():
     itchat.send_msg("task running...",toUserName='filehelper')
 
 if __name__ == "__main__":
+    init()
     time_task()
     #sendtogroup()  
     #sendtofriend()
